@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+
+ <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+</head>
+<body>
+<header>Speak Your Mind</header>
+
+
+<form id="form" class="topBefore" method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    {% for field in form %}
+          <div class="fieldWrapper">
+              {{ field.errors }}
+              <label for="{{ field.id_for_label }}"></label>
+              {{ field }}
+          </div>
+     {% endfor %}    
+  <input id="submit" type="submit" value="Send">
+  
+</form>
+</body>

@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100i,100,200);
+@import url(https://fonts.googleapis.com/css?family=Cousine:100);
+
+body {
+    display:none;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.header {
+  left:25%;
+  right:25%;
+}
+
+.main-title {
+  font-family: 'Raleway',sans-serif;
+  font-weight:100;
+  font-size: 8vw;
+  margin-bottom: -15;
+  text-align:center;
+
+}
+
+.subheader {
+  font-family:Cousine;
+  font-size:1.5vw;
+  margin: 0 auto;
+  padding-bottom: 1vw;
+}
+
+.post-short {
+    float: left;
+    margin-top: 0px;
+    width:50%;
+    height: 10vw;
+    display:table;
+}
+
+.post-short:hover {
+    background:#f0ffff;
+    transition: 0.3s;
+}
+
+
+.icon {
+  width:30px;
+  margin: auto;
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 5%;
+  padding-left:10%;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+}
+
+.post-text {
+  vertical-align: middle;
+  display: table-cell;
+  font-family: Raleway, sans-serif;
+  font-weight: 200;
+  font-size: 5vw;
+  padding-top: 22;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-title a:hover {
+    color:#f0ffff;
+    transition: .3s;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #f0ffff;
+  }
+  100% {
+    color: black;
+  }
+}
+
+
+
+p:hover {
+    color:orange;
+    transition: 0.3s;
+}

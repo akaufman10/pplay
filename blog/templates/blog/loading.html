@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<html>
+ <head>
+ <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="{% static 'css/headings.css' %}">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+ <script src="{% static "js/typed.js" %}"></script>
+ <script src="{% static "js/typing.js" %}"></script>
+ <script src="{% static "js/fade.js" %}"></script>
+ <script src="{% static "js/fade_out.js" %}"></script>
+ <meta http-equiv="refresh" content="7.1;{% url 'home' %}"/>
+ </head>
+ <body>
+ 
+ <div class="main">
+   <span class="title">
+     Power Plays
+     <div id="typed-strings">
+     <p class="subheader" id= "typed">
+       A collection of powerful plays for powerful people
+     </p>
+     </div>
+  </div>
+  </body>
+
+</html>

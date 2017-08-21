@@ -1,0 +1,21 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="play">
+	{% if user.is_authenticated %}
+	     <a class="btn btn-default" href="{% url 'play_edit' pk=play.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+	{% endif %}
+        <h2>{{ play.title }}</h2>
+        <p>{{ play.play|linebreaksbr }}</p>
+        <p>{{ play.play_image }}</p>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a><p> The Counter Play</p> </a>
+        <a><p1> {{ play.title }} </p1><a>
+        <p2> {{play.counter|linebreaksbr }}</p2>
+        <p2> {{play.counter_image}}</p2>
+
+    </div>
+{% endblock %}

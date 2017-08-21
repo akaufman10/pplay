@@ -1,0 +1,280 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100i,200);
+@import url(https://fonts.googleapis.com/css?family=Cousine:100);
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+}
+
+a i {
+    color:#9CB3B5;
+    -webkit-text-stroke: .7px white;
+}
+
+
+a i:hover {
+    color:#CCF4F4;
+    -webkit-transition: all 0.3s;
+}
+
+
+
+.centered {
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+}  
+
+}
+
+.title-bar {
+   width: 100%;
+   padding: 1vw;
+   text-align:center;
+   margin:0;
+}
+
+h1 {
+    font-size: 5vw;
+}
+  
+.title-text {
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 200;
+    padding-top:-4vw;
+}
+
+
+h1 {
+    text-align:center;
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 200;
+
+}
+
+h1 a {
+    padding-top:-20%;
+    border-bottom: .05vw solid black;
+    padding-bottom: 2vw;
+}
+
+h1 a:hover {
+    color:#f0ffff;
+    transition: .3s;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #f0ffff;
+  }
+  100% {
+    color: black;
+  }
+}
+
+
+.play {
+   width: 100%;
+   padding: 1vw;
+   text-align:center;
+   margin:0;    
+}
+
+.play-form {
+   width: 100%;
+   padding: 1vw;
+   text-align:center;
+   margin:0;
+}
+
+.play h2 {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 100; 
+    font-style: italic;
+    font-size: 4vw;
+}
+
+.play h2:hover {
+    color:#CCF4F4;
+    transition: 0.3s;
+}
+
+p {
+    font-size: 2vw;
+    font-family: Cousine;
+}
+
+p:hover {
+    color:#CCF4F4;
+    transition: 0.3s;
+}
+
+
+.opn-counter {
+    padding-top: 10vw;
+    width: 100%;
+    padding: 1vw;
+    text-align:center;
+    margin:0;
+}
+
+
+h3 {
+    display:inline-block;
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 500;
+    border: .05vw solid black;
+    padding: 1vw;
+    font-size: 5vw;
+    transition-duration: 0.4s;
+}
+
+h3:hover {
+    background: #FFE096;
+    color: #CCF4F4;
+    transition: 0.3s;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#f0ffff;;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    display:inline-block;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    padding-top: 3vw;
+
+}
+
+.sidenav p {
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 500;
+    display:inline-block;
+    border-bottom: .05vw solid black;
+    padding-bottom: 2vw;
+    font-size: 5vw;
+
+}
+
+.sidenav p1 {
+    font-family: 'Raleway', sans-serif;  
+    font-weight: 100;
+    font-style:italic;
+    display:inline-block;
+    font-size: 4vw;
+
+}
+
+
+.sidenav p2 {
+    font-family: 'Cousine', sans-serif;  
+    display:inline-block;
+    font-size: 2vw;
+}
+
+
+.sidenav a:hover{
+    color: orange;
+    transition: 0.3s;
+}
+
+.sidenav p:hover{
+    color:orange;
+    border-bottom: .05vw solid orange;
+}
+
+.sidenav a1 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 5vw;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: -1vw;
+    right: 2wv;
+    font-size: 5vw;
+    margin-left: 90vw;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+j.countries {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  display: inline;
+
+}
+
+j li {
+  display: inline-block;
+  position: relative;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+j li:hover {
+  background: white;
+  transition: all 0.3s;
+}
+j li ul {
+  padding: 0;
+  width: 150px;
+  display: none;
+  visibility: hidden;
+  -webkit-transiton:  0.3s;
+  -moz-transition:  0.3s;
+  -ms-transition:  0.3s;
+  -o-transition:  0.3s;
+  -transition:  0.3s;
+}
+
+j li ul li { 
+  margin: 0 2px;
+  background: white; 
+  display: inline; 
+  color: orange;
+}
+
+J li ul li:hover { 
+  background: white; 
+  margin:0 10px; 
+  transition: all 0.3s;
+}
+
+J li:hover ul {
+  display: inline;
+  visibility: visible;
+  transition: all 0.3s;
+}

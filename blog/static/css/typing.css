@@ -1,0 +1,22 @@
+.type-out {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 31em;
+  -moz-animation: type 6s steps(50, end);
+  -webkit-animation: type 6s steps(50, end);
+  -ms-animation: type 6s steps(50, end);
+  -o-animation: type 6s steps(50, end);
+  animation: type 6s steps(65, end);
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+
+@-webkit-keyframes type{
+  from { width: 0; }
+}
+
+
+
