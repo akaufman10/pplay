@@ -52,18 +52,18 @@ def play_detail(request,pk):
 
 def play_new(request):
     if request.user.is_authenticated():
-	    if request.method == "POST":
-		form = PlayForm(request.POST)
-		if form.is_valid():
-                    play = form.save(commit=False)
-                    play.author = request.user
-                    play.logo = request.user.userprofile.icon
-                    play.published_date = timezone.now()
-                    play.save()
-                    return redirect('play_detail', pk=play.pk)
-            else:
-                form = PlayForm()
-            return render(request, 'blog/play_edit.html', {'form': form})
+        if request.method == "POST":
+            form = PlayForm(request.POST)
+            if form.is_valid():
+                play = form.save(commit=False)
+                play.author = request.user
+                play.logo = request.user.userprofile.icon
+                play.published_date = timezone.now()
+                play.save()
+                return redirect('play_detail', pk=play.pk)
+        else:
+            form = PlayForm()
+        return render(request, 'blog/play_edit.html', {'form': form})
     else:
         return render(request, 'blog/login.html', {})
 
